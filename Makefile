@@ -10,4 +10,4 @@ check-strict:
 docs:
 	$(shell vessel bin)/mo-doc
 test:
-	make -C test
+	make --no-print-directory -C test

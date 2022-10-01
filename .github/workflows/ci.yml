@@ -21,6 +21,6 @@ jobs:
     - name: "check"
       run: make check-strict
     - name: "test"
-      run: make test
+      run: npm i; npm run test
     - name: "docs"
       run: make docs
