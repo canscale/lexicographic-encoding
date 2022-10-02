@@ -30,11 +30,6 @@ test("Javascript reference implementation reliably works up to 1.7 * 10^13 (no d
 // i in each of the tests is the line index from the motoko test output file
 describe("test output file", () => {
   const lines = readFileSync("output.txt", 'utf-8').split("\n");
-  console.log("first 15", lines.slice(0, 15));
-  console.log("lines[3]", lines[3]);
-  console.log("lines[4]", lines[4]);
-  console.log("lines[5]", lines[5]);
-  console.log("lines[6]", lines[6]);
 
   // line index = 0
   test("test zero", async () => {

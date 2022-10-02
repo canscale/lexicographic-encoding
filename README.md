@@ -2,6 +2,15 @@
 
 A library for lexicographically encoding Integers
 
+## Usage
+
+```
+import E "mo:encode/EncodeInt";
+
+let x: Int = 256;
+let encoded = E.encodeInt(x);
+```
+
 ## Limitations
 
 Currently this library is only able to reliably encode integers from **0** up to ~**1.7 * 10^13**, while maintaining equivalence with the JavaScript reference implementation in `reference/lexicographic-encoding.ts`
